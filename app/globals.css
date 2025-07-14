@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /* Apply Poppins as default font for body */
+    font-family: var(--font-poppins), system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* Apply Bebas Neue for headings */
+    font-family: var(--font-bebas-neue), cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+@layer components {
+  .bebas {
+    font-family: var(--font-bebas-neue), cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .poppins {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+  }
+}
